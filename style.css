@@ -1,0 +1,22 @@
+body {
+    background: hsl(233, 47%, 7%);
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 85%;
+    height: 90%;
+    color: #fff;
+    background: hsl(244, 38%, 16%);
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
