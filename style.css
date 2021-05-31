@@ -124,12 +124,12 @@ body {
 
     .card-body h2 {
         /* font-size: 1.8rem;  */
-        margin-top: 1rem;
+        margin-top: .5rem;
         padding: 0 1.6rem;
     }
 
     .card-body p {
-        padding: 0 2.5rem;
+        padding: 0 2rem;
         /* font-size: .9rem; */
     }
 
@@ -150,6 +150,12 @@ body {
     }
 }
 
+@media screen and (min-width: 376px) {
+
+    .card-body h2 { 
+        padding: 0 3.5rem;
+    }
+}
 /*@media screen and (min-width: 290px) {
 
     .card {
