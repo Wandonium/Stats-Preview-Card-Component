@@ -150,132 +150,86 @@ body {
     }
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 376px) and screen (max-width: 1023px) {
 
-    .card-body h2 { 
-        padding: 0 3.5rem;
-    }
-}
-/*@media screen and (min-width: 290px) {
-
-    .card {
-        width: 85%;
-        height: 88%;
-        overflow-y: scroll;
-    }
-
-    .card-body h2 {
-        padding: 0 1rem;
-    }
-
-    .card-body p {
-        padding-left: 1rem;
-        padding-right: 1rem;
+    .card-body h2, .card-body p { 
+        padding: 0 3rem;
     }
 
     .card-body ul {
         margin-top: 1rem;
-        margin-left: -1rem;
-    }
-
-    .card-body li {
-        margin-bottom: 1.5rem;
     }
 }
 
-@media screen and (min-width: 380px) {
-
-    image::before {
-        height: 100%;
-    }
-
-    .card-body h2, .card-body p {
-        margin-top: 2rem;
-        padding-left: 1.9rem;
-        padding-right: 1.9rem;
-    }
-
-    .card-body ul {
-        margin-left: -2rem;
-    }
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
 
     .card {
         display: flex;
         flex-direction: row-reverse;
         height: 50%;
+        width: 80%;
     }
 
     .image {
-        background-image: url('');
-        position: relative;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
-
-    .image img {
-        display: block;
-        width: 100%;
-        height: 400%;
-    }
-
-    /* .image::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 98%;
-        opacity: 0.7;
-        background: hsl(277, 64%, 61%);
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+        background-image: url('images/image-header-desktop.jpg');
+        height: 100%;
+        background-size: cover;
     }
 
     .card-body {
-        width: 50%;
         align-items: flex-start;
-        padding: 2rem;
+        padding-top: 4rem;
+        /* justify-content: center; */
     }
 
     .card-body h2 {
-        margin-top: 1rem;
-        margin-bottom: 0;
-        margin-left: 0;
-        padding: 2rem 6rem 2rem 2rem;  
-        font-size: 2rem;
-        text-align: left;
+        font-size: 1.8rem;
     }
 
-    .card-body p {
+    .card-body h2, .card-body p {
         text-align: left;
-        margin-top: 0;
-        padding-left: 2rem;
-        padding-right: 10rem;
-        font-size: .8rem;
+        padding-left: 2.5rem;
+        padding-right: 5rem;
+        margin: 0 0 1rem 1rem;
     }
 
     .card-body ul {
         display: flex;
-        margin-left: 2rem;
-        margin-top: 4rem;
+        margin-left: 1rem;
+        margin-top: 3rem;
     }
 
     .card-body li {
-        margin-right: 4.5rem;
+        margin-right: 4rem;
     }
 
     .card-body li .num, .card-body li .txt {
         text-align: left;
     }
+}
 
-    .card-body li .num {
-        font-size: 2rem;
+@media screen and (min-width: 1440px) {
+
+    .image {
+        max-width: 50%;
+        height: 100%;
     }
 
-    .card-body li .txt {
-        font-size: .8rem;
+    .card-body {
+        padding-left: 4rem;
     }
-}*/
+
+    .card-body h2 {
+        font-size: 2.5rem;
+        padding-right: 10rem;
+    }
+
+    .card-body p {
+        font-size: 1rem;
+        padding-right: 12rem;
+    }
+
+    .card-body ul {
+        margin-left: 3.5rem;
+    }
+}
