@@ -14,7 +14,7 @@ body {
 
 .card {
     width: 88%;
-    height: 90%;
+    height: 100%;
     color: #fff;
     background: hsl(244, 38%, 16%);
     border-radius: 10px;
@@ -24,8 +24,8 @@ body {
     position: relative;
     width: 100%;
     height: 30%;
-    /* border-top-left-radius: 10px; */
-    /* border-top-right-radius: 10px; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     background-image: url('images/image-header-mobile.jpg');
     background-color: hsl(277, 64%, 61%);
     background-size: cover;
@@ -93,23 +93,16 @@ body {
 
 @media screen and (max-width: 320px) and (min-width: 290px) {
 
+    .card {
+        overflow-y: scroll;
+    }
+
     .card-body h2 {
-        margin-top: 2rem;
         padding: 0 1rem;
     }
 
     .card-body p {
-        margin-top: 1rem;
-        margin-bottom: 1.5rem;
         padding: 0 1.5rem;
-    }
-
-    .card-body ul {
-        margin-top: 1rem;
-    }
-
-    .card-body li {
-        margin-bottom: 1.8rem;
     }
 
     .card-body li .num {
@@ -139,7 +132,7 @@ body {
     }
 
     .card-body li {
-        margin-bottom: 1.8rem;
+        /* margin-bottom: 1.8rem; */
     }
 
     .card-body li .num {
@@ -151,7 +144,7 @@ body {
     }
 }
 
-@media screen and (min-width: 376px) and screen (max-width: 1023px) {
+@media screen and (min-width: 376px) and screen (max-width: 760px) {
 
     .card-body h2, .card-body p { 
         padding: 0 3rem;
@@ -159,6 +152,41 @@ body {
 
     .card-body ul {
         margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 761px) {
+    .card {
+        width: 70%;
+    }
+
+    .card-body h2 {
+        padding: 0 5rem;
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+    .card-body p {
+        font-size: 1rem;
+        padding: 0 4rem;
+        margin-top: 2rem;
+    }
+
+    .card-body ul {
+        margin-top: 2rem;
+    }
+
+    .card-body li {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+
+    .card-body li .num {
+        font-size: 1.6rem;
+    }
+
+    .card-body li .txt {
+        font-size: .8rem;
     }
 }
 
@@ -175,6 +203,8 @@ body {
         background-image: url('images/image-header-desktop.jpg');
         height: 100%;
         background-size: cover;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 10px;
     }
 
     .card-body {
