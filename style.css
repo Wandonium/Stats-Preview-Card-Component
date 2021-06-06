@@ -90,6 +90,7 @@ body {
     font-family: 'Lexend Deca', sans-serif;
 }
 
+
 @media screen and (max-width: 320px) and (min-width: 290px) {
 
     .card-body h2 {
@@ -230,6 +231,6 @@ body {
     }
 
     .card-body ul {
-        margin-left: 3.5rem;
+        /* margin-left: 3.5rem; */
     }
 }
